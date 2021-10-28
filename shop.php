@@ -6,14 +6,14 @@
     */
 
 
-    class Prodotto extends Shop{
+    class Prodotto {
         public $nome;
         public $descrizione;
         public $tipologia;
         public $prezzo;
         public $disponibilita;
 
-        protected function __construct($nome, $descrizione, $tipologia, $prezzo, $disponibilita){
+        public function __construct($nome, $descrizione, $tipologia, $prezzo, $disponibilita){
 
             $this->nome = $nome;
             $this->descrizione = $descrizione;
@@ -75,7 +75,9 @@
     }
 
 
+    
+    $nuovoProdotto = new Prodotto('Nutella Biscuits', 'biscotti', 'biscotti', 2, 'disponibile');
 
- $nuovoProdotto
+    var_dump($nuovoProdotto);
 ?>
 
