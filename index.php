@@ -63,11 +63,11 @@
         public function getId() {
             return $this->id;
         }
-        public function getFirstName() {
-            return $this->firstname;
+        public function getNome() {
+            return $this->nome;
         }
-        public function getLastName() {
-            return $this->lastname;
+        public function getCognome() {
+            return $this->cognome;
         }
         public function getEmail() {
             return $this->email;
